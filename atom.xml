@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/law-dot/law-dot.github.io</id>
-    <title>liup的个人博客</title>
-    <updated>2020-09-14T05:27:16.229Z</updated>
+    <title>浮尘的个人博客</title>
+    <updated>2020-09-14T05:30:22.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/law-dot/law-dot.github.io"/>
     <link rel="self" href="https://github.com/law-dot/law-dot.github.io/atom.xml"/>
     <subtitle>温故而知新可以为师也</subtitle>
     <logo>https://github.com/law-dot/law-dot.github.io/images/avatar.png</logo>
     <icon>https://github.com/law-dot/law-dot.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, liup的个人博客</rights>
+    <rights>All rights reserved 2020, 浮尘的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://github.com/law-dot/law-dot.github.io/post/hello-gridea/</id>
