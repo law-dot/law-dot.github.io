@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="never">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <meta name="keywords" content="">
+  <title>linux玩游戏的正确方式 | 浮尘的博客</title>
+  <link href="https://law-dot.github.io/media/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://law-dot.github.io/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="linux玩游戏的正确方式 | 浮尘的博客 » Feed" href="https://law-dot.github.io/atom.xml">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <script src="https://law-dot.github.io/media/scripts/jquery.min.js"></script>
+  <link href="https://law-dot.github.io/styles/main.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://law-dot.github.io">浮尘的博客</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://law-dot.github.io/media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+        </span>
+            <h1>linux玩游戏的正确方式</h1>
+            <span class="meta">
+            	Posted on
+              2023-04-25，2 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>既喜欢linux系统的开源免费，又喜欢玩windws游戏，鱼与熊掌如何兼得？</p>
+<p>很多才接触linux系统人印象中，linux系统没有游戏可玩。这在之前，的确如此。但自2018年steam推出steamplay工具后，这一说法就变成了一个伪命题。</p>
+<h3 id="steamplay是什么">steamplay是什么</h3>
+<p>steamplay是维尔福公司（Valve）开发的一个兼容性工具，使 Steam 可以在 Wine 和其他额外组件上运行。这使得steam可以运行很多只能在 Windows 平台上运行的游戏。steam通过Proton（质子），目前可以运行10万+的windows游戏。</p>
+<p>据质子数据库网站（https://www.protondb.com/stats）统计数据，至2020年10月27日，质子数据库已经收到10万份可运行游戏的报告。</p>
+<p>像热门的只狼、gta5、老滚5、、巫师3、无人深空、冰汽时代、地狱之刃、恐怖黎明等都收到了可白金运行的报告。</p>
+<h3 id="如何开启steamplay">如何开启steamplay</h3>
+<p>首先，在你的linux系统上安装steam。安装方法各个linux版本不同，请大家自行搜索。</p>
+<p>打开steam，点击左上角的steam下拉菜单，点设置。再点账户——参与测试——更改——steam beta update。点击确定后，steam会自动重启。</p>
+<p>重启后，设置中会多出一个steam play的选项。点steam play，勾选“为支持的产品启用steam play”和“为所有其他产品启用steam play”，在“运行其他产品时使用”下拉框中，选择最新的proton版本。</p>
+<p>然后，steam会自动更新。更新后，在游戏库中就多出了许多只能在windows中可以运行的游戏，各位可以选择自己已经购买的游戏尽情游玩了。</p>
+<h3 id="总结">总结</h3>
+<p>当然，steamplay也不是万能的，游戏库列表中的游戏到底能不能运行，与你的电脑配置有关，与游戏本身的兼容性也有关。具体哪些游戏可运行，各人的电脑不尽相同，还需要读者朋友们自行测试。</p>
+<p>今天的介绍就到这里，喜欢的朋友可以收藏、关注加评论。</p>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://law-dot.github.io/post/gao-man-m5yi-kuan-ke-xian-ke-tian-de-chao-gao-xing-jie-bi-zhi-neng-shou-xie-ben-fu-linux-xia-an-zhuang-shi-yong-jiao-cheng/">
+              <span class="post-title">
+                高漫M5，一款可咸可甜的超高性价比智能手写本。附linux下安装使用教程
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://law-dot.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>浮尘的博客</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/clean-blog.min.js"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

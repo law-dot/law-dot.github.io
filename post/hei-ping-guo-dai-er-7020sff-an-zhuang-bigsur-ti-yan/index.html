@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="never">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <meta name="keywords" content="">
+  <title>黑苹果：戴尔7020sff安装bigsur体验 | 浮尘的博客</title>
+  <link href="https://law-dot.github.io/media/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://law-dot.github.io/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="黑苹果：戴尔7020sff安装bigsur体验 | 浮尘的博客 » Feed" href="https://law-dot.github.io/atom.xml">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <script src="https://law-dot.github.io/media/scripts/jquery.min.js"></script>
+  <link href="https://law-dot.github.io/styles/main.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://law-dot.github.io">浮尘的博客</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://law-dot.github.io/media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+            <a href="https://law-dot.github.io/tag/QNWRuSNnS/" class="tag">黑苹果</a>
+            
+        </span>
+            <h1>黑苹果：戴尔7020sff安装bigsur体验</h1>
+            <span class="meta">
+            	Posted on
+              2023-03-23，6 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <!-- more -->
+<p>都说苹果的macos系统怎么怎么好，很早就想体验体验，但由于家中电脑用的是无核显的九代cpu+2070的组合，一直上不了手。最近从某宝上弄了台二手的戴尔7020sff的小主机，卖家给装好了macos10.15.7系统，但体验下来，有几处不完美的地方，于上决定自己学习全新安装macos，并将安装过程记录下来，与有相同配置主机的同好分享。</p>
+<h2 id="一-硬件配置">一、硬件配置</h2>
+<p>cpu：i5 4590; gpu:intelhd4600核显；主板：q87;内存：10gddr3（2条4g+2条2g）；硬盘：128gssd。</p>
+<h2 id="二-系统选择">二、系统选择</h2>
+<p>购买这台小主机的时候，卖家是包安装Macos10.15.7系统的，但到手后，有几个地方不是很完美：一是不能睡眠，一睡眠就自动重启；二是前置声音接口和内置喇叭都不能发声，只能插后置接口发声，这样用耳机就很不方便。咨询卖家，问能不能解决上述2个问题和升级到最新系统，卖家表示他也没有找到很好的解决方法。于是只能作罢，自己上网学习寻找解决方案。因为懒得再去从头学习clover和opencore等配置，只能寻找现成的efi文件。通过反复安装测试，得出以下结论<br>
+1、Catalina 10.15.7系统：使用卖家提供的系统镜像和efi安装成功，但存在不能睡眠和前置音频接口不能使用缺陷，也没能找到能够完美解决上述问题的clover或opencore的efi,只有放弃。<br>
+2、Monterey 12.0 Beta 7：安装成功，解决了睡眠问题和音频驱动问题，但因本人使用usb蓝牙接收器无法驱动，原因是苹果公司在最新的Monterey 12中舍弃了许多驱动，找不到解决办法。同时，在使用过程中，也有很多软件不稳定，出现闪退，也只好放弃。<br>
+3、bigsur 11.6:目前正在使用中，解决了睡眠重启问题，内置喇叭能够完美发声和切换，前置音频接口可以使用并能与后置音频接口自由切换。目前使用稳定。</p>
+<h2 id="三-系统安装前的准备工作">三、系统安装前的准备工作</h2>
+<p>1、安装系统前，首先要查看自己的bios版本，并将bios升级到最新的A18。bios升级方法，请查阅戴尔官方文档。<code>https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=8wycn&amp;oscode=w764&amp;productcode=optiplex-7020-desktop</code><br>
+2、下载bigsur镜像文件。本人下载的是黑果小兵的11.6三分区版镜像。下载这个镜像的原因是黑果小兵的镜像文件中包含了7020可用的efi文件，不需要另外在寻找其他efi。（下载地址：<code>https://blog.daliansky.net/macOS-BigSur-11.6-20G165-Release-version-with-OC-0.7.3-and-Clover-5139-and-PE-original-image.html</code>）具体安装方法也请详细参阅上面链接内容，本文不作详细说明。<br>
+这里也对黑果小兵表示感谢，让我少走了很多弯路。也请下载他镜像的朋友不吝打赏支持。<br>
+3、刻盘。使用balenaetcher制作安装U盘。到balenaetcher官网下载对应的系统版本，运行后，点选第一项，选择你下载好的系统镜像，然后点第二项选择你的U盘（注：U盘必须选择16g以上的。刻盘后，U盘上的数据将全部被格式化，请先行作好数据备份。）<br>
+4、安装前对bios进行设置。首先是解锁CFG Lock，具体参阅（<code>https://zearp.github.io/OptiHack/OptiGuide/installation.html</code>）从启动菜单进入modGRUBShell，输入etup_var 0xDA2 0x0`。**然后是USB 修复。从启动菜单进入modGRUBShell，依次输入setup_var 0x2 0x1回车，setup_var 0x144 0x1回车，setup_var 0x15A 0x2回车，setup_var 0x146 0x0回车，setup_var 0x147 0x0回车，然后退出modGRUBShell，就可以进行系统安装了。（因从 OpenCore v0.6.9 关于 Kernel 的 Quirk - XhciPortLimit 在 macOS Big Sur 11.3.x/11.4/11.5.x 下失效，未来 OpenCore 更新版本是否会修复还没有确切的消息，所以在升级到11.3.x/11.4/11.5.x版本之前须先定制USB。定制USB教程请参阅黑果小兵的教程。）<br>
+5、系统安装。安装之前，请用黑果小兵镜像中的OpenCoreConfig修改SMBIOS（请务必使用镜像中的OpenCoreConfig工具，因为OpenCoreConfig与opencore的版本必须是统一的），将系统版本修改为iMac15.1。不修改也可以，因为黑果小兵的镜像已经作了通用设置，可以安装系统，但用默认的机型后续会有提示系统升级的烦恼。也可以安装好系统后，再进行修改。然后，再修改config.plist文件。将镜像efi中默认的config.plist删除，将haswell.plist重命名为config.plist（因为i54590是haswell核心，的以要选择haswell.plist）。如果不出意外，你就可以顺利进入系统安装环节了。系统安装完成之后，还要进行显卡设置。用OpenCoreConfig挂载efi分区，载入config.plist，**找到“设备属性设置”，将PCIroot(0x0)/pci(0x2,0xq)项根据提示将带“#”的内容注释掉，显卡就能正常驱动了。<br>
+总结：本文只对戴尔7020sff安装黑苹果系统的安装进行介绍，对系统具体安装不作入门级的详细说明，相信玩黑苹果的朋友也都是有一定基础的。具体安装方式，其实黑果小兵的博客上都有详细的教程，请自行参考。通过近一个多月的折腾，本人结论：黑果系统只能作为学习工具用来玩玩，在实际使用过程中，系统稳定性还是不如白苹果，软硬件的兼容性方面还是各种小问题不断。要用来工作，体验原版的macos的丝滑顺畅，还是建议购买苹果原装机器。</p>
+
+          
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://law-dot.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>浮尘的博客</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/clean-blog.min.js"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+

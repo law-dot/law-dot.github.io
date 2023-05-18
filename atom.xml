@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://law-dot.github.io</id>
+    <title>浮尘的博客</title>
+    <updated>2023-05-18T07:54:56.491Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://law-dot.github.io"/>
+    <link rel="self" href="https://law-dot.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://law-dot.github.io/images/avatar.png</logo>
+    <icon>https://law-dot.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 浮尘的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[linux下使用八位堂SN30pro手柄玩ppsspp模拟器教程]]></title>
+        <id>https://law-dot.github.io/post/linux-xia-shi-yong-ba-wei-tang-sn30pro-shou-bing-wan-ppsspp-mo-ni-qi-jiao-cheng/</id>
+        <link href="https://law-dot.github.io/post/linux-xia-shi-yong-ba-wei-tang-sn30pro-shou-bing-wan-ppsspp-mo-ni-qi-jiao-cheng/">
+        </link>
+        <updated>2023-05-18T07:54:17.000Z</updated>
+        <content type="html"><![CDATA[<p>家里只有一个xboxone手柄，平时用来在电脑上玩steam游戏。但是春节孩子们都放假了，电脑也就没我什么事了。</p>
+<p>于是，我把家里吃灰很久的旧电脑搬了出来，准备装个linux系统玩ppsspp模拟器游戏（10年前买的psp因为左摇杆失灵已经因废了，但是psp的情怀还在。特别是当听到怪物猎人P3里《英雄之证》音乐响起的时刻，随时都会肾上腺素飚升）。为此，我搜遍某宝，终于找到了一个兼容各平台的游戏手柄——也就是今天的主角八位堂8bitdo sn30pro。</p>
+<p>因为关注八位堂很久了，对其游戏手柄的复古设计很有好感 ，一下子让我找到了当年和表哥躲在阁楼里玩红白机的感觉。收到快递的时候，急切的拆开包装盒，手柄的样子终究没让我失望，红白黑的配色，做工精致细腻，按键的手感还正真的点红白机的影子。唯一让我不满意的地方，可能是玩惯了xobxone的缘故，感觉手柄的配重有点轻，容易产生手部肌肉疲劳。</p>
+<p>因为8bitdo sn30pro兼容Switch、安卓、windows、macos和树莓派，测试了安卓手机和电视盒子串流玩steam游戏，都顺利通过。只是串流的时候，不习惯任天堂的键位布局，要改按键的键位才顺手。至于在上述平台上连接手柄的方法，官方说明书已经讲得很清楚了，这里我就不多废话了。下面，主要介绍一下，在linux下用8bitdo sn30pro玩ppsspp模拟器游戏。</p>
+<p>一、linux下驱动安装</p>
+<p>由于8bitdo sn30pro是兼容树莓派的，所以也我推理也应该兼容linux系统。这次我的旧电脑上安装的是manjaro系统，所以我就以manjaro为例，与大家分享一下我的安装使用过程。</p>
+<p>步骤一、按x+start键让手柄开机，再用usb线连接电脑。</p>
+<p>步骤二、在manjaro下，打开终端，输入“<strong>sudo modprobe joydev</strong>”，加载驱动进内核。</p>
+<p>步骤三、重启电脑，打开“系统设置”，点击“输入设备”，再点击“游戏控制器”，发现已经识别手柄，显示为“Microsoft X-Box 360 pad (/dev/input/js0)”说明手柄已经正常驱动了。</p>
+<p>二、ppsspp安装及设置</p>
+<p>1、安装ppsspp。首先打开终端，输入“yay -S ppsspp&quot;安装ppsspp，最新版本为ppsspp-1.10.3-1 。不过貌似这个版本有点问题，测试怪物猎人p3的时候闪退，其他游戏有没有问题没测试。于是我在系统的应用市场&quot;添加|删除软件&quot;里输入ppsspp，找到了一个flatpak的1.10.0和版本进行安装，这个版本就没有闪退的现象。</p>
+<p>2、ppsspp加载游戏。打开ppsspp，点“载入新游戏，找到存放游戏iso的路径（我是将怪物猎人p3的iso放在home目录下的psp文件夹内），就可以看到游戏图标，点击游戏图标，就直接加载了。如果加载游戏正常，可保持默认设置就行了。</p>
+<p>3、设置手柄。在软件打开界面，点击右上角的“游戏设置”，点“控制设置”，再点“按键映射”，然后用鼠标点击相应按键后，再按手柄上相应的键位就设置好了。</p>
+<p>好了，今天的介绍就到这了，欢迎朋友们评论区留言交流。祝大家春节期间游戏愉快，万事顺意！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[linux玩游戏的正确方式]]></title>
+        <id>https://law-dot.github.io/post/linux-wan-you-xi-de-zheng-que-fang-shi/</id>
+        <link href="https://law-dot.github.io/post/linux-wan-you-xi-de-zheng-que-fang-shi/">
+        </link>
+        <updated>2023-04-25T01:52:23.000Z</updated>
+        <content type="html"><![CDATA[<p>既喜欢linux系统的开源免费，又喜欢玩windws游戏，鱼与熊掌如何兼得？</p>
+<p>很多才接触linux系统人印象中，linux系统没有游戏可玩。这在之前，的确如此。但自2018年steam推出steamplay工具后，这一说法就变成了一个伪命题。</p>
+<h3 id="steamplay是什么">steamplay是什么</h3>
+<p>steamplay是维尔福公司（Valve）开发的一个兼容性工具，使 Steam 可以在 Wine 和其他额外组件上运行。这使得steam可以运行很多只能在 Windows 平台上运行的游戏。steam通过Proton（质子），目前可以运行10万+的windows游戏。</p>
+<p>据质子数据库网站（https://www.protondb.com/stats）统计数据，至2020年10月27日，质子数据库已经收到10万份可运行游戏的报告。</p>
+<p>像热门的只狼、gta5、老滚5、、巫师3、无人深空、冰汽时代、地狱之刃、恐怖黎明等都收到了可白金运行的报告。</p>
+<h3 id="如何开启steamplay">如何开启steamplay</h3>
+<p>首先，在你的linux系统上安装steam。安装方法各个linux版本不同，请大家自行搜索。</p>
+<p>打开steam，点击左上角的steam下拉菜单，点设置。再点账户——参与测试——更改——steam beta update。点击确定后，steam会自动重启。</p>
+<p>重启后，设置中会多出一个steam play的选项。点steam play，勾选“为支持的产品启用steam play”和“为所有其他产品启用steam play”，在“运行其他产品时使用”下拉框中，选择最新的proton版本。</p>
+<p>然后，steam会自动更新。更新后，在游戏库中就多出了许多只能在windows中可以运行的游戏，各位可以选择自己已经购买的游戏尽情游玩了。</p>
+<h3 id="总结">总结</h3>
+<p>当然，steamplay也不是万能的，游戏库列表中的游戏到底能不能运行，与你的电脑配置有关，与游戏本身的兼容性也有关。具体哪些游戏可运行，各人的电脑不尽相同，还需要读者朋友们自行测试。</p>
+<p>今天的介绍就到这里，喜欢的朋友可以收藏、关注加评论。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[高漫M5，一款可咸可甜的超高性价比智能手写本。附linux下安装使用教程]]></title>
+        <id>https://law-dot.github.io/post/gao-man-m5yi-kuan-ke-xian-ke-tian-de-chao-gao-xing-jie-bi-zhi-neng-shou-xie-ben-fu-linux-xia-an-zhuang-shi-yong-jiao-cheng/</id>
+        <link href="https://law-dot.github.io/post/gao-man-m5yi-kuan-ke-xian-ke-tian-de-chao-gao-xing-jie-bi-zhi-neng-shou-xie-ben-fu-linux-xia-an-zhuang-shi-yong-jiao-cheng/">
+        </link>
+        <updated>2023-04-04T01:57:08.000Z</updated>
+        <content type="html"><![CDATA[<p>由于经常要做会议记录，一直在寻找一款价格合适、功能齐全的智能手写本。直到有一天，今日头条向我推送了高漫M5智能手写本的广告。出于好奇心，随手点开了链接，发现正好符合我所有的要求：可在电脑上当成手绘板使用、可在安卓手机上使用、可以纸屏同步。而且价格相当实惠——官网价格仅99元。对于这样的价格，还要什么自行车，于是果断下手。经过几天使用，完全出乎我的意料，几乎可以说是一款可咸可甜的手绘板神器。</p>
+<h2 id="一-开箱">一、开箱</h2>
+<p>包装中规中矩，并没有100元产品的廉价感。白色的包装盒，中间是高漫智能手写本及笔的剪影图，左上方是高漫的logo，右下方是“M5|智能手写本”的产品标识。包装盒背面是产品参数。开口处还有防伪封签。整体虽不算精致，但设计简洁，拿在手里，沉甸甸的。</p>
+<p>打开包装盒，首先映入眼帘的是一方方正正的笔记本。由于我买的是黑色，感觉本子有浓浓的商务气息。笔记本外壳是仿皮材质，与一般的纸质笔记本没多大区别。</p>
+<p>打开笔记本，上层是一个6孔活页夹和共20页书写纸，活页夹的金属卡扣还蛮有质感。翻开手写纸，下面一层就是这款智能手写本的核心区域——电磁手绘板。手绘板左下方是microusb接口,通过这个接口，用附送的连接线，可以直连手机，也可以连接电脑。手绘板左上方是指示灯和切换键。手绘板右侧是一个笔插孔和吸附磁扣。</p>
+<p>附件方面，高漫M5官方标配有一支无源压感笔、一根手机otg连接线、一根电脑usb连接线、一个type-c转microusb转换头、10个替换笔芯和一个换笔夹。要实现在纸上手写同屏，还要加购一支手写笔。手写笔套餐价格是138元，除官方标配，还多一支手写笔和5支替换圆珠笔芯。</p>
+<p>根据官方给出的参数，这款智能手写本采用电磁感应技术，同时支持安卓6.0以上、windows7以上及macos10以上系统。压感级别为8192，读写分辨率5080LPI。进入官方网站，可以下载产品说明书和windows和macos驱动，但并没有找到linux系统驱动（关于怎样在linux下安装驱动，下面将重点介绍）。</p>
+<h2 id="二-使用体验">二、使用体验</h2>
+<p>安卓手机。根据快速指南，安卓手机通过otg连接线手上就能识别，测试了onenote和sketchbook，均可流畅使用，压力感应正常，读写速度几乎没有延迟，使用体验上好过多年前购买的有源手绘板。</p>
+<p>纸屏同步。通过另配的手写笔，可自由在纸张上书写。打开华为手机的备忘录，可以一边在纸上写，一边同屏在备忘录上手写输入。</p>
+<p>电脑手绘。测试了linux下的gimp,可以完美读出压力和倾斜，支持丰富的笔刷压感设置。压感笔上的快捷键，同样可以识别出来：下键为移动画布，上键为调出菜单。还测试了一下linux下的手写笔记软件——xournal。xournal是linux下一款不可多得的手写笔记软件。可支持文本输入、手写输入、可输出为pdf、可自由设置笔记背景、纸张颜色、纸张大小，完全支持原笔迹手写输入。</p>
+<h2 id="三-linux驱动安装">三、linux驱动安装</h2>
+<p>由于主要是工作电脑上使用，而我的工作电脑安装的是linux，于是疯狂百度，终于找到了驱动安装方法。</p>
+<p>debian系相对简单，打开https://github.com/DIGImend/digimend-kernel-drivers/releases/tag/v10，下载digimend-dkms_10_all.deb，安装就可。</p>
+<p>archlinux系，要复杂一点。但由于aur已经有编译好的包，也仅仅是一个命令解决的事。</p>
+<p>打开终端，输入</p>
+<p>yay -S digimend-kernel-drivers-kernel-drivers</p>
+<p>圆满解决。</p>
+<p>打开系统设置，可以看到已经安装好了 Gaomon Tablet Pad驱动。</p>
+<h2 id="四-总结">四、总结</h2>
+<p>如果不是用于专业绘画，高漫M5完全是一款不可多得的高性价比产品。首先，完美支持安卓、windows和苹果macos系统，可实现多平台无缝接驳。其次，可同时实现手绘和手写，既可作为一块手绘板使用，也可以作为一个原笔迹手写输入设备（在windows下可实现 Windows Ink ）。第三，同等价格下，目前市面上几乎没有更好的替代品。无论是想学习手绘的小白用来练手，抑或是老年人用来做手写板进行文字输入，还是办公人士用来会议记录、绘制草图，都可以完全胜任。一包香烟的价格，能实现如此诸多功能，特别是解决了linux驱动后，如此各平台通吃、可感可甜、老少皆宜的高性价比产品，舍高漫M5，又还有谁呢？</p>
+<p>好，本期的介绍就到这里。对于高漫M5的更多使用体验或新奇用法，欢迎读者朋友在评论区讨论。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[也许这是新手搭建GitHub静态博客的最简单方式]]></title>
+        <id>https://law-dot.github.io/post/ye-xu-zhe-shi-xin-shou-da-jian-github-jing-tai-bo-ke-de-zui-jian-dan-fang-shi/</id>
+        <link href="https://law-dot.github.io/post/ye-xu-zhe-shi-xin-shou-da-jian-github-jing-tai-bo-ke-de-zui-jian-dan-fang-shi/">
+        </link>
+        <updated>2023-03-23T06:35:08.000Z</updated>
+        <content type="html"><![CDATA[<p>众所周知，GitHub是一个知名的代码托管平台，许多码农都在其上托管自己的开发项目。其实，GitHub还提供了一个免费的静态网页服务，即GitHub pages。于是许多人都在这上面搭建了个人博客系统。出于免费羊毛不薅白不薅的心态，本人也试着GitHub pages的说明文档进行了搭建。但作为编程小白的我，尝试了N次都一直不成功。要么404，要么写好了“helloword”之后，后续的文章就不知道怎么添加了。本着不成功不罢休的精神，于是我满互联网寻找神兵利器，还真被我找到了一个趁手的神器，而且还是开源免费的。这件神兵就是我现在在用的gridea。<br>
+<img src="https://cdn.jsdelivr.net/gh/law-dot/mypic/img/202303231504802.png" alt="image.png" loading="lazy"></p>
+<p>根据官网介绍：Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。</p>
+<p>其主要功能有：<br>
+1、支持 <strong>Markdown</strong>语法<br>
+2、可在文章中的任意位置插入<strong>图片</strong>和文章封面图表<br>
+3、支持<strong>标签</strong>和分组文章<br>
+4、可自定义<strong>菜单</strong>，甚至创建外部链接菜单<br>
+5、支持在 <strong>Windows</strong> 或 <strong>MacOS</strong> 或 <strong>Linux</strong> 上使用客户端<br>
+6、支持 <strong>Github</strong> 页面或<strong>编码页面</strong>，未来将支持更多平台<br>
+7、支持<strong>评论</strong>系统，只需配置和访问 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 注释系统<br>
+8、支持<strong>简体中文</strong>、繁体中文、英语、俄语、法语<br>
+9、使用应用程序内的任何默认<strong>主题</strong>或任何第三方主题，免费主题自定义<br>
+10、自定义源文件夹并使用OneDrive，iCloud，Dropbox等同步多个设备。</p>
+<h2 id="一-软件下载安装">一、软件下载安装</h2>
+<p>（官方网址： https://gridea.dev/   开源地址： https://github.com/getgridea/gridea ）<br>
+上面这是软件的官方主页，他提供了付费服务，但也提供了开源软件。<br>
+点击“开源客户端”，可下载到开源的软件。找到相应的操作系统所对应的版本下载安装即可。安装完成后，呈现的界面如下 (引用的官方软件界面图）：</p>
+<h2 id="二-配置">二、配置</h2>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/law-dot/mypic/img/202303231615541.png" alt="image.png" loading="lazy"></figure>
+<h3 id="1-配置远程连接">1 、配置远程连接</h3>
+<p>关于如何申请注册并开通github pages的方法网上有很多，这里不赘述。<br>
+如上图所示，先点进“远程”菜单，按图示说明填写好相关内容后点“保存”。<br>
+填好之后，点击“检测远程连接”，显示成功则可，显示不成功，说明填写的内容不正确。</p>
+<h3 id="2-配置主题">2、配置主题</h3>
+<p>进“主题”菜单，选择相应的主题。软件内置了几款主题，如果不喜欢，还可到官网下载其他的主题，把下载好的主题包解压后放到用户/文档/Gridea/themes文件夹下即可。重启软件，选择下载好的主题即可。<br>
+然后中，根据提示，填写网站名称、网站描述、底部信息等即可，然后保存。</p>
+<h3 id="3-写文章">3 、写文章</h3>
+<p>远程连接和主题配置好后，即可在“文章”菜单中，点+号新建文章了。写好了文章，要记得点勾保存。然后点右侧的预览，即可看到文章发布的效果。</p>
+<h3 id="发布">发布</h3>
+<p>在发布之前，你可点击左侧的预览按钮，察看你的网站的整体效果。觉得可以了后，只要勾选你要发布的文章，点击左侧的同步按钮就可以一键生成GitHub静态网页了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[总有一款适合你！几款免费笔记软件推荐]]></title>
+        <id>https://law-dot.github.io/post/zong-you-yi-kuan-gua-he-ni-ji-kuan-mian-fei-bi-ji-ruan-jian-tui-jian/</id>
+        <link href="https://law-dot.github.io/post/zong-you-yi-kuan-gua-he-ni-ji-kuan-mian-fei-bi-ji-ruan-jian-tui-jian/">
+        </link>
+        <updated>2023-03-23T01:30:31.000Z</updated>
+        <content type="html"><![CDATA[<p>所谓读书破万卷，下笔如有神。好记心不如烂笔头。任何领域，要有所建树，都需要有长期的知识储备。相信现如今已经没有多少人再用笔记本记东西了，数字笔记已然成了大多数人必备选择。今天，小编就为大家奉上时下流行的多款开源（免费）笔记软件，方便大家选择。</p>
+<h2 id="1-同步网盘坚果mega">1、同步网盘：坚果/mega</h2>
+<p>工欲善其事必先利其器。无论是pc端还是手机端，如果是单机笔记软件，总是不安全的，谁也保证不了系统不会出问题。为此，你需要一个云存储工具，这样，你的文件就永远不会丢失了。</p>
+<p>坚果：官方网址https://www.jianguoyun.com/。国内较好的同步网盘之一。支持windows\macos\ios\Android\linux，个人免费版空间受限于上传流量，月上传流量1G，下载流量3G。</p>
+<p>mega:官方网址https://www.megasoftware.net/。国外非常好的同步网盘之一。同样支持windows\macos\ios\Android\linux，个人免费版空间50G，绑定手机号后可免费扩充至70G。<s>国内可直接使用（目前已经不能用了)</s>，速度尚可。</p>
+<p>为什么不推荐Onedrive、Googledrive，因为国内使用要挂梯子，非常不方便。</p>
+<h2 id="2-本地笔记typoraobsidiancherrytree樱桃树">2、本地笔记：typora/obsidian/cherrytree樱桃树</h2>
+<p>typora（打字机）:官网地址https://www.typora.io/。pc端免费markdown文本编辑器，支持macos/windows/linux，可实时自动保存，支持导出pdf、html、word、epub、rtf等10余种格式。特色：软件界面干净清爽，支持实时预览、图片上传图床、语法高亮，配合同步网盘使用，非常nice。</p>
+<p>obsidian（黑曜石）：官网地址https://obsidian.md/。黑曜石是一个功能强大的免费知识库软件，支持Markdown语法，文件存储在本地，支持导出为pdf，支持macos/windows/linux，官网准备推出移动版本。特色：支持文档之间双向链接、卡片、大纲、录音，关系图谱可使文件之间的关联一目了然。同样需要配合同步网盘使用。</p>
+<p>cherrytree（樱桃树）：官方网址https://www.giuspen.com/cherrytree/，支持macos/windows/linux。一款开源的富文本编辑器，不支持markdown文本。支持导出pdf、html、text。特色：树状节点可以无限层级添加子节点，支持文档加密，支持插入图片、表格、代码框、超链接、锚点、书签等。</p>
+<h2 id="3-云笔记wolainotion">3、云笔记：wolai/notion</h2>
+<p>wolai（我来）：官方网址https://www.wolai.com/。web应用，只要有网络就可使用，不用担心文件丢失。有macos和windows客户端下载。免费版空间限制500M，文件上传限制单文件小于2M，块数量限制3000个。官方宣传wolai是一款个人的信息库、笔记、知识、待办、计划、剪藏、数据应用。特色：双向链接和信息图谱，多种音视频嵌入能力，中文编辑体验的极致优化，智能的悬浮目录，代码连字显示，丰富的图标和头图。相较notion，少了数据库功能，但因服务器建在国内，打开速度较notion快很多，且中文支持比notion好很多。notion虽支持中文编辑，但应用界面没有中文化，对国内用户不太友好。</p>
+<p>notion：官方网址https://www.notion.so/。同样是web应用，只要有网络就可使用。支持windows\macos\ios\Android\linux客户端。一款功能极为丰富的笔记应用，集笔记、任务、知识库、数据库为一体的工作平台。免费用户无块数量限制，有chrome插件，与onenote一样，支持网页剪藏。特色：带数据库的表格功能，支持多种视图展示，可任意筛选需要展示的选项。可以无限层次嵌套页面，支持嵌套外部网页，支持插入图片、音视频、网站链接、代码、本地文件，甚至是外部应用（如地图）展示。不足：因服务器是国外的，打开速度比较慢，需要一定的耐心。界面不支持中文，对国内用户不友好。</p>
+<h2 id="4-大纲笔记幕布dynalist">4、大纲笔记：幕布/dynalist</h2>
+<p>幕布：官方网址https://mubu.com/。一款极简大纲笔记web应用，云端自动同步，支持下载windows\macos\ios\Android客户端。支持加密功能、文档关系图、一键生成思维导图，可导出pdf\word\html\opml\图片。免费用户有300条文档限制，不能插入图片，只有4种思维导图样式，只能导出pdf\word\html\图片4种格式，回收站只保留7天。</p>
+<p>dynalist（王朝）：官方网址https://dynalist.io/。与幕布功能相近，支持云同步，国内无须梯子可直接使用。可下载windows\macos\linux\ios\android。可中文编辑，但无中文界面。打开速度有点慢。与幕布相比，免费用户无文档条数限制，但无思维导图功能。</p>
+<p>当然，好的笔记软件还有很多，如onenote、印象笔记、语雀等，小编就不赘述了。欢迎大家评论留言。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[黑苹果：戴尔7020sff安装bigsur体验]]></title>
+        <id>https://law-dot.github.io/post/hei-ping-guo-dai-er-7020sff-an-zhuang-bigsur-ti-yan/</id>
+        <link href="https://law-dot.github.io/post/hei-ping-guo-dai-er-7020sff-an-zhuang-bigsur-ti-yan/">
+        </link>
+        <updated>2023-03-23T01:08:52.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>都说苹果的macos系统怎么怎么好，很早就想体验体验，但由于家中电脑用的是无核显的九代cpu+2070的组合，一直上不了手。最近从某宝上弄了台二手的戴尔7020sff的小主机，卖家给装好了macos10.15.7系统，但体验下来，有几处不完美的地方，于上决定自己学习全新安装macos，并将安装过程记录下来，与有相同配置主机的同好分享。</p>
+<h2 id="一-硬件配置">一、硬件配置</h2>
+<p>cpu：i5 4590; gpu:intelhd4600核显；主板：q87;内存：10gddr3（2条4g+2条2g）；硬盘：128gssd。</p>
+<h2 id="二-系统选择">二、系统选择</h2>
+<p>购买这台小主机的时候，卖家是包安装Macos10.15.7系统的，但到手后，有几个地方不是很完美：一是不能睡眠，一睡眠就自动重启；二是前置声音接口和内置喇叭都不能发声，只能插后置接口发声，这样用耳机就很不方便。咨询卖家，问能不能解决上述2个问题和升级到最新系统，卖家表示他也没有找到很好的解决方法。于是只能作罢，自己上网学习寻找解决方案。因为懒得再去从头学习clover和opencore等配置，只能寻找现成的efi文件。通过反复安装测试，得出以下结论<br>
+1、Catalina 10.15.7系统：使用卖家提供的系统镜像和efi安装成功，但存在不能睡眠和前置音频接口不能使用缺陷，也没能找到能够完美解决上述问题的clover或opencore的efi,只有放弃。<br>
+2、Monterey 12.0 Beta 7：安装成功，解决了睡眠问题和音频驱动问题，但因本人使用usb蓝牙接收器无法驱动，原因是苹果公司在最新的Monterey 12中舍弃了许多驱动，找不到解决办法。同时，在使用过程中，也有很多软件不稳定，出现闪退，也只好放弃。<br>
+3、bigsur 11.6:目前正在使用中，解决了睡眠重启问题，内置喇叭能够完美发声和切换，前置音频接口可以使用并能与后置音频接口自由切换。目前使用稳定。</p>
+<h2 id="三-系统安装前的准备工作">三、系统安装前的准备工作</h2>
+<p>1、安装系统前，首先要查看自己的bios版本，并将bios升级到最新的A18。bios升级方法，请查阅戴尔官方文档。<code>https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=8wycn&amp;oscode=w764&amp;productcode=optiplex-7020-desktop</code><br>
+2、下载bigsur镜像文件。本人下载的是黑果小兵的11.6三分区版镜像。下载这个镜像的原因是黑果小兵的镜像文件中包含了7020可用的efi文件，不需要另外在寻找其他efi。（下载地址：<code>https://blog.daliansky.net/macOS-BigSur-11.6-20G165-Release-version-with-OC-0.7.3-and-Clover-5139-and-PE-original-image.html</code>）具体安装方法也请详细参阅上面链接内容，本文不作详细说明。<br>
+这里也对黑果小兵表示感谢，让我少走了很多弯路。也请下载他镜像的朋友不吝打赏支持。<br>
+3、刻盘。使用balenaetcher制作安装U盘。到balenaetcher官网下载对应的系统版本，运行后，点选第一项，选择你下载好的系统镜像，然后点第二项选择你的U盘（注：U盘必须选择16g以上的。刻盘后，U盘上的数据将全部被格式化，请先行作好数据备份。）<br>
+4、安装前对bios进行设置。首先是解锁CFG Lock，具体参阅（<code>https://zearp.github.io/OptiHack/OptiGuide/installation.html</code>）从启动菜单进入modGRUBShell，输入etup_var 0xDA2 0x0`。**然后是USB 修复。从启动菜单进入modGRUBShell，依次输入setup_var 0x2 0x1回车，setup_var 0x144 0x1回车，setup_var 0x15A 0x2回车，setup_var 0x146 0x0回车，setup_var 0x147 0x0回车，然后退出modGRUBShell，就可以进行系统安装了。（因从 OpenCore v0.6.9 关于 Kernel 的 Quirk - XhciPortLimit 在 macOS Big Sur 11.3.x/11.4/11.5.x 下失效，未来 OpenCore 更新版本是否会修复还没有确切的消息，所以在升级到11.3.x/11.4/11.5.x版本之前须先定制USB。定制USB教程请参阅黑果小兵的教程。）<br>
+5、系统安装。安装之前，请用黑果小兵镜像中的OpenCoreConfig修改SMBIOS（请务必使用镜像中的OpenCoreConfig工具，因为OpenCoreConfig与opencore的版本必须是统一的），将系统版本修改为iMac15.1。不修改也可以，因为黑果小兵的镜像已经作了通用设置，可以安装系统，但用默认的机型后续会有提示系统升级的烦恼。也可以安装好系统后，再进行修改。然后，再修改config.plist文件。将镜像efi中默认的config.plist删除，将haswell.plist重命名为config.plist（因为i54590是haswell核心，的以要选择haswell.plist）。如果不出意外，你就可以顺利进入系统安装环节了。系统安装完成之后，还要进行显卡设置。用OpenCoreConfig挂载efi分区，载入config.plist，**找到“设备属性设置”，将PCIroot(0x0)/pci(0x2,0xq)项根据提示将带“#”的内容注释掉，显卡就能正常驱动了。<br>
+总结：本文只对戴尔7020sff安装黑苹果系统的安装进行介绍，对系统具体安装不作入门级的详细说明，相信玩黑苹果的朋友也都是有一定基础的。具体安装方式，其实黑果小兵的博客上都有详细的教程，请自行参考。通过近一个多月的折腾，本人结论：黑果系统只能作为学习工具用来玩玩，在实际使用过程中，系统稳定性还是不如白苹果，软硬件的兼容性方面还是各种小问题不断。要用来工作，体验原版的macos的丝滑顺畅，还是建议购买苹果原装机器。</p>
+]]></content>
+    </entry>
+</feed>

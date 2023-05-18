@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="never">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <meta name="keywords" content="">
+  <title>也许这是新手搭建GitHub静态博客的最简单方式 | 浮尘的博客</title>
+  <link href="https://law-dot.github.io/media/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://law-dot.github.io/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="也许这是新手搭建GitHub静态博客的最简单方式 | 浮尘的博客 » Feed" href="https://law-dot.github.io/atom.xml">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <script src="https://law-dot.github.io/media/scripts/jquery.min.js"></script>
+  <link href="https://law-dot.github.io/styles/main.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://law-dot.github.io">浮尘的博客</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://law-dot.github.io/media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+        </span>
+            <h1>也许这是新手搭建GitHub静态博客的最简单方式</h1>
+            <span class="meta">
+            	Posted on
+              2023-03-23，4 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>众所周知，GitHub是一个知名的代码托管平台，许多码农都在其上托管自己的开发项目。其实，GitHub还提供了一个免费的静态网页服务，即GitHub pages。于是许多人都在这上面搭建了个人博客系统。出于免费羊毛不薅白不薅的心态，本人也试着GitHub pages的说明文档进行了搭建。但作为编程小白的我，尝试了N次都一直不成功。要么404，要么写好了“helloword”之后，后续的文章就不知道怎么添加了。本着不成功不罢休的精神，于是我满互联网寻找神兵利器，还真被我找到了一个趁手的神器，而且还是开源免费的。这件神兵就是我现在在用的gridea。<br>
+<img src="https://cdn.jsdelivr.net/gh/law-dot/mypic/img/202303231504802.png" alt="image.png" loading="lazy"></p>
+<p>根据官网介绍：Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。</p>
+<p>其主要功能有：<br>
+1、支持 <strong>Markdown</strong>语法<br>
+2、可在文章中的任意位置插入<strong>图片</strong>和文章封面图表<br>
+3、支持<strong>标签</strong>和分组文章<br>
+4、可自定义<strong>菜单</strong>，甚至创建外部链接菜单<br>
+5、支持在 <strong>Windows</strong> 或 <strong>MacOS</strong> 或 <strong>Linux</strong> 上使用客户端<br>
+6、支持 <strong>Github</strong> 页面或<strong>编码页面</strong>，未来将支持更多平台<br>
+7、支持<strong>评论</strong>系统，只需配置和访问 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 注释系统<br>
+8、支持<strong>简体中文</strong>、繁体中文、英语、俄语、法语<br>
+9、使用应用程序内的任何默认<strong>主题</strong>或任何第三方主题，免费主题自定义<br>
+10、自定义源文件夹并使用OneDrive，iCloud，Dropbox等同步多个设备。</p>
+<h2 id="一-软件下载安装">一、软件下载安装</h2>
+<p>（官方网址： https://gridea.dev/   开源地址： https://github.com/getgridea/gridea ）<br>
+上面这是软件的官方主页，他提供了付费服务，但也提供了开源软件。<br>
+点击“开源客户端”，可下载到开源的软件。找到相应的操作系统所对应的版本下载安装即可。安装完成后，呈现的界面如下 (引用的官方软件界面图）：</p>
+<h2 id="二-配置">二、配置</h2>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/law-dot/mypic/img/202303231615541.png" alt="image.png" loading="lazy"></figure>
+<h3 id="1-配置远程连接">1 、配置远程连接</h3>
+<p>关于如何申请注册并开通github pages的方法网上有很多，这里不赘述。<br>
+如上图所示，先点进“远程”菜单，按图示说明填写好相关内容后点“保存”。<br>
+填好之后，点击“检测远程连接”，显示成功则可，显示不成功，说明填写的内容不正确。</p>
+<h3 id="2-配置主题">2、配置主题</h3>
+<p>进“主题”菜单，选择相应的主题。软件内置了几款主题，如果不喜欢，还可到官网下载其他的主题，把下载好的主题包解压后放到用户/文档/Gridea/themes文件夹下即可。重启软件，选择下载好的主题即可。<br>
+然后中，根据提示，填写网站名称、网站描述、底部信息等即可，然后保存。</p>
+<h3 id="3-写文章">3 、写文章</h3>
+<p>远程连接和主题配置好后，即可在“文章”菜单中，点+号新建文章了。写好了文章，要记得点勾保存。然后点右侧的预览，即可看到文章发布的效果。</p>
+<h3 id="发布">发布</h3>
+<p>在发布之前，你可点击左侧的预览按钮，察看你的网站的整体效果。觉得可以了后，只要勾选你要发布的文章，点击左侧的同步按钮就可以一键生成GitHub静态网页了。</p>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://law-dot.github.io/post/zong-you-yi-kuan-gua-he-ni-ji-kuan-mian-fei-bi-ji-ruan-jian-tui-jian/">
+              <span class="post-title">
+                总有一款适合你！几款免费笔记软件推荐
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://law-dot.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>浮尘的博客</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://law-dot.github.io/media/scripts/clean-blog.min.js"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+
